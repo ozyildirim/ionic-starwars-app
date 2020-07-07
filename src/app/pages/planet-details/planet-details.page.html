@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/planets"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{planet?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="planet">
+    <ion-card-content>
+      <ion-card-header>
+        <ion-item><ion-label>Name:</ion-label>{{planet.name}}</ion-item>
+      </ion-card-header>
+
+      <ion-item>
+        <ion-label>Rotation Period:</ion-label>{{planet.rotation_period}}</ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
